@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            background-color:wheat;
+         
+
+        }
+        main{
+            
+         
+            
+        }
+        .home{
+
+        }
+        .navlet{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size:x-large;
+            text-decoration: solid;
+         
+            
+            
+        }
+        .navlet a{
+            color: black;
+            text-decoration: none;
+            
+
+           
+        }
+        .search-container{
+            position: absolute;
+            margin-left: 80%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;         
+        }
+        .search-input{
+            border-radius: 4px 0 0 4px;
+            border: 1px solid black;
+            width: 200px;
+            height: 24px;
+        }
+        .search-btn{
+            border:1px solid black;
+            font-size: 14px;
+            gap: none;
+            height: 24px;
+            width: 25px;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            
+        }
+        .write{
+            padding-left: 20px;
+            margin-top: 40px;
+            padding-right: 300px;
+        }
+        .selectors{
+            display: flex;
+            
+            
+            justify-content: center;
+            
+            padding-top: 30px;
+            font-family: serif;
+            font-size: 14px;
+            
+          
+
+
+        }
+        .images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+           
+        }
+
+        .images img{
+            height: 500px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          
+          
+        }
+        .disc{
+            font-size: smaller;
+        }
+        .selectors a{
+            text-decoration: none;
+            font-size: x-large;
+            color: black;
+            font-weight: bold;
+            
+        }
+        .img1{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img2{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .w{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .b{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+    
+
+</style>
+</head>
+
+
+<body>
+    <main>
+        <section class="home">
+            
+              <div class="navbar">
+               
+                    <div class="logo"><h3>AZBOTTLE</h3></div>
+                    <ul class="navlet">
+                        <li><a href="">Arizona Wine</a></li>
+                        <li><a href="">Arizona Beer</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Archieves</a></li>
+                        <li><a href="">Information</a></li>  
+                        <div class="search-container">
+                            <input type="text" placeholder="Search...."class="search-input">
+                            <button class="search-btn">Go</button>
+                        </div>                            
+                    </ul> 
+                    
+                    
+              </div>  
+        </section>
+
+    </main>
+    <article class="write">
+        <div >
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima animi vero laborum, aspernatur nesciunt cum accusamus quis mollitia quidem magni? Vel quis, reprehenderit tempore omnis necessitatibus molestias veritatis deleniti voluptate quibusdam dolores nostrum sed consectetur, similique est placeat accusamus laboriosam voluptatem et consequatur quisquam. Doloremque eius dignissimos laudantium et vero.</p>
+            <p class="select">Please select Arizona Wine or Arizona Beer to view more.</p>
+            <p class="disc">The images below are randomly generated from AZbottle profiles.</p>
+        </div>
+        <div class="selectors">
+            <div class="w"><a href="">ARIZONA WINE</a>                
+            </div>
+            <div class="b"><a href="">ARIZONA BEER</a>               
+            </div>
+        </div>
+            <div class="images">
+                <div class="img1">
+                <img src="https://plus.unsplash.com/premium_photo-1664305025290-0d4ebc148c2a?q=80&w=1330&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="wine">
+                </div>
+                <div class="img2">
+                    <img src="https://images.unsplash.com/photo-1679592726581-82d88e5908d2?q=80&w=990&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beer">
+           
+                </div>
+            </div>
+
+        
+        
+
+
+        
+        
+
+    </article>
+
+    
+</body>
+</html>
