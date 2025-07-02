@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid task2</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border;
+        }
+        body{
+            padding:50px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .grid-box{
+         
+
+            padding: 10px;
+            display: grid;
+            width: 1000px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px;
+          
+            row-gap: 10px;
+            column-gap: 10px;
+
+        }
+
+        .item1{
+            background-color:#B7DEFF;
+            grid-column: span 2;
+            border-radius: 15px;
+            padding: 5px;
+            
+        }
+        .image{
+            display: flex;
+            
+            flex-direction: column;
+            flex: 1;
+            /* malai foto tala halna man laayo tara tala haalda button pani tala saryo */
+
+         
+
+        }
+        .image img{
+            height: 200px;
+            max-width: 180px;
+            display: flex;
+            
+          
+            object-fit: contain;
+          
+           
+          
+            
+
+        }
+        .item1 h3{
+            color: #2B8CEE;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .content-box{
+            display: flex;
+            /* align-items: center; */
+            gap: 10px;
+        }
+        .btn button{
+            background-color: #2B8CEE ;
+            display: flex;
+            max-width: 200px;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+           
+            height: 35px;
+            margin-left: 70px;
+            
+            cursor: pointer;
+            color: white;
+            border: transparent;
+            width: 100px;
+            
+        }
+        /* .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        } */
+
+
+       
+        .text1{
+            color:#2B8CEE ;
+            display: flex;
+          
+            max-width: 350px;
+            margin-top: 20px;
+            
+            
+        }
+ 
+        .item2{
+            background-color: #CAF0DB;
+            border-radius: 15px;
+        }
+        .content-box2 h3{
+            color: #56C688;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .textfield2 i{
+            color:#56C688;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            
+        }
+        .text2 p{
+            color: #56C688;
+            padding-left: 15px;
+
+        }
+        .item3{
+            background-color: #FED2D1;
+            border-radius: 15px
+        }
+        .content-box3 i{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: #FF8A88;
+            padding-top:15px ;
+
+
+        }
+
+        .textfield3 p{
+            color: #FF8A88;
+            padding-left: 15px;
+        }
+        .textfield3 h3{
+            color: #FF8A88;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .item4{
+            background-color:#FFE7C3;
+            border-radius: 15px
+        }
+        .content-box4 i{
+            color: #FFC069;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            
+        }
+        .content-box4 h3{
+            color: #FFC069;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .text4 p{
+            color: #FFC069;
+            padding-left:10px ;
+        }
+        .item5{
+            background-color:#D4D3F5;
+            border-radius: 15px
+        }
+        .content-box5 i{
+            color:#9693E4 ;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-box5 h3{
+            color:#9693E4 ;
+            padding: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .textfield5 p{
+            color: #9693E4 ;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="grid-box">
+            <div class="item1">
+                
+                <h3>Get a demo application</h3>
+                <div class="content-box">
+                     
+                    <div class="textfield">
+                         <div class="text1">
+                        <p>
+                        Lorem ipsum dolor, sit asdasdas amet consectetur adipisicing elit.asdasd Accusaasdasd mus commodi perspiciatis, error magni eligendi voluptatum optio ea minus accusantium necessitatibus?
+                        </p>
+                        
+                         </div>
+                    </div> 
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1623385245725-2c39e44567e5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+
+                <div class="btn">
+                  <button><i class="fa-brands fa-apple"></i>&nbsp;App Store</button>
+                </div>
+
+            </div>
+            <div class="item2">
+                <div class="content-box2">
+                    
+                    <div class="textfield2">
+                        <i class="fa-solid fa-file fa-6x"></i>
+                        <h3>Clean Code</h3>
+                        <div class="text2">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur nisi quisquam delectus optio aspernatur.</p>
+                        </div>
+
+                        
+                    </div>
+    
+                </div>
+            </div>
+            <div class="item3">
+                <div class="content-box3">
+                    <div class="textfield3">
+                        <i class="fa-solid fa-desktop fa-6x"></i>
+                        <h3> Web Design</h3>
+                        <div class="text3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptate eum nihil nesciunt quis. Illum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item4">
+                <div class="content-box4">
+                    <div class="textfield4">
+                        <i class="fa-solid fa-file-code fa-6x"></i>
+                        <h3>Development</h3>
+                        <div class="text4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum ad facere impedit earum consequatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item5">
+                <div class="content-box5">
+                    <div class="textfield5">
+                    <i class="fa-solid fa-volume-high fa-6x"></i>
+                    <h3>Branding</h3>
+                         <div class="text5">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda repellendus sed, ratione vel voluptatibus!</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
